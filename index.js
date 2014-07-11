@@ -14,7 +14,7 @@ function uniq(arr) {
 
 function uniqSet(arr) {
 	var seen = new Set;
-	return array.filter(function(item){
+	return arr.filter(function(item){
 		if (!seen.has(item)) {
 			seen.add(item);
 			return true;
