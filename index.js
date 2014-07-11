@@ -13,13 +13,13 @@ function uniq(arr) {
 }
 
 function uniqSet(arr) {
-	var ret = [];
-
-	(new Set(arr)).forEach(function (el) {
-		ret.push(el);
+	var seen = new Set;
+	return array.filter(function(item){
+		if (!seen.has(item)) {
+			seen.add(item);
+			return true;
+		}
 	});
-
-	return ret;
 }
 
 module.exports = 'Set' in global ? uniqSet : uniq;
