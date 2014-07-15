@@ -1,6 +1,9 @@
 'use strict';
 
-function uniq(arr) {
+// We have 3 implementations for unique, written in increasing order of efficiency 
+
+// 1 - no Set type is defined
+function uniqNoSet(arr) {
 	var ret = [];
 
 	for (var i = 0; i < arr.length; i++) {
@@ -12,7 +15,19 @@ function uniq(arr) {
 	return ret;
 }
 
+// 2 - a simple Set type is defined
 function uniqSet(arr) {
+	var seen = new Set;
+	return arr.filter(function(item){
+		if (!seen.has(item)) {
+			seen.add(item);
+			return true;
+		}
+	});
+}
+
+// 3 - a standrd Set type is defined and it has a forEach method
+function uniqSetWithForEach(arr) {
 	var ret = [];
 
 	(new Set(arr)).forEach(function (el) {
@@ -22,4 +37,13 @@ function uniqSet(arr) {
 	return ret;
 }
 
-module.exports = 'Set' in global ? uniqSet : uniq;
+// export the relevant implementation
+if ('Set' in global) {
+	if (typeof(Set.prototype.forEach) === 'function') {
+		module.exports = uniqSetWithForEach
+	} else {
+		module.exports = uniqSet
+	}
+} else {
+	module.exports = uniqNoSet
+}
