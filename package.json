@@ -30,6 +30,7 @@
   ],
   "devDependencies": {
     "es6-set": "^0.1.0",
-    "mocha": "*"
+    "mocha": "*",
+    "require-uncached": "^1.0.2"
   }
 }
