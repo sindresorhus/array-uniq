@@ -1,6 +1,6 @@
 'use strict';
 
-// we have 3 implementations for unique, written in increasing order of efficiency
+// there's 3 implementations written in increasing order of efficiency
 
 // 1 - no Set type is defined
 function uniqNoSet(arr) {
@@ -37,7 +37,6 @@ function uniqSetWithForEach(arr) {
 	return ret;
 }
 
-// export the relevant implementation
 if ('Set' in global) {
 	if (typeof Set.prototype.forEach === 'function') {
 		module.exports = uniqSetWithForEach;
