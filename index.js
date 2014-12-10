@@ -46,7 +46,7 @@ function doesForEachActuallyWork() {
 		ret = el;
 	});
 
-	return ret;
+	return ret === true;
 }
 
 if ('Set' in global) {
