@@ -1,6 +1,6 @@
 {
   "name": "array-uniq",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create an array without duplicates",
   "license": "MIT",
   "repository": "sindresorhus/array-uniq",
