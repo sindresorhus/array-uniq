@@ -10,7 +10,7 @@
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=6"
   },
   "scripts": {
     "test": "xo && ava"
@@ -24,14 +24,11 @@
     "set",
     "uniq",
     "unique",
-    "es6",
     "duplicate",
     "remove"
   ],
   "devDependencies": {
     "ava": "*",
-    "es6-set": "^0.1.0",
-    "require-uncached": "^1.0.2",
     "xo": "*"
   }
 }

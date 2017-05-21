@@ -2,8 +2,6 @@
 
 > Create an array without duplicates
 
-It's already pretty fast, but will be much faster when [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) becomes available in V8 (especially with large arrays).
-
 
 ## Install
 
