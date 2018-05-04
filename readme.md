@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save array-uniq
+$ npm install array-uniq
 ```
 
 
