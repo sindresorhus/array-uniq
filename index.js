@@ -1,2 +1,6 @@
 'use strict';
-module.exports = x => [...new Set(x)];
+
+const arrayUniq = array => [...new Set(array)];
+
+module.exports = arrayUniq;
+module.exports.default = arrayUniq;
