@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
-import arrayUniq from '.';
+import arrayUniq = require('.');
 
 expectType<number[]>(arrayUniq([1, 2, 3]));
