@@ -1,4 +1,4 @@
-# array-uniq [![Build Status](https://travis-ci.org/sindresorhus/array-uniq.svg?branch=master)](https://travis-ci.org/sindresorhus/array-uniq)
+# array-uniq
 
 > Create an array without duplicates
 
