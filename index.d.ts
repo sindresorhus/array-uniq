@@ -5,7 +5,7 @@ Create an array without duplicates.
 
 @example
 ```
-import arrayUniq = require('array-uniq');
+import arrayUniq from 'array-uniq';
 
 arrayUniq([1, 1, 2, 3, 3]);
 //=> [1, 2, 3]
@@ -14,8 +14,4 @@ arrayUniq(['foo', 'foo', 'bar', 'foo']);
 //=> ['foo', 'bar']
 ```
 */
-declare function arrayUniq<ValueType>(
-	array: ReadonlyArray<ValueType>
-): ValueType[];
-
-export = arrayUniq;
+export default function arrayUniq<ValueType>(array: readonly ValueType[]): ValueType[];

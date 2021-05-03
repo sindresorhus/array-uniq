@@ -2,18 +2,16 @@
 
 > Create an array without duplicates
 
-
 ## Install
 
 ```
 $ npm install array-uniq
 ```
 
-
 ## Usage
 
 ```js
-const arrayUniq = require('array-uniq');
+import arrayUniq from 'array-uniq';
 
 arrayUniq([1, 1, 2, 3, 3]);
 //=> [1, 2, 3]
@@ -21,7 +19,6 @@ arrayUniq([1, 1, 2, 3, 3]);
 arrayUniq(['foo', 'foo', 'bar', 'foo']);
 //=> ['foo', 'bar']
 ```
-
 
 ---
 

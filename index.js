@@ -1,5 +1,3 @@
-'use strict';
-
-const arrayUniq = array => [...new Set(array)];
-
-module.exports = arrayUniq;
+export default function arrayUniq(array) {
+	return [...new Set(array)];
+}
